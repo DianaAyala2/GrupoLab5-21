@@ -7,7 +7,6 @@ import javafx.scene.control.TextField;
 
 import model.Conversor;
 import model.MetrosACentimetros;
-import model.CentimetrosAMetros;
 
 public class ConversorController {
 

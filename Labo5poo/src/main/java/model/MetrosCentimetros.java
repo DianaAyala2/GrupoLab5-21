@@ -1,4 +1,11 @@
 package model;
 
-public class MetrosCentimetros {
+import patterns.strategy.EstrategiaConversion;
+
+public class MetrosCentimetros implements EstrategiaConversion {
+
+    @Override
+    public double convertir(double valor) {
+        return valor * 100;
+    }
 }
