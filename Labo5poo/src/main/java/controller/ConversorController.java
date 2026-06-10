@@ -5,8 +5,9 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
+import model.CentimetrosMetros;
 import model.Conversor;
-import model.MetrosACentimetros;
+import model.MetrosCentimetros;
 
 public class ConversorController {
 
@@ -45,11 +46,11 @@ public class ConversorController {
 
             if (origen.equals("Metros") && destino.equals("Centímetros")) {
 
-                conversor.setEstrategia(new MetrosACentimetros());
+                conversor.setEstrategia(new MetrosCentimetros());
 
             } else if (origen.equals("Centímetros") && destino.equals("Metros")) {
 
-                conversor.setEstrategia(new CentimetrosAMetros());
+                conversor.setEstrategia(new CentimetrosMetros());
 
             } else {
 
